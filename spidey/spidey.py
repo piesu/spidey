@@ -100,7 +100,7 @@ if __name__ == '__main__' :
       exit()
   site = sys.argv[1]
   proto = site.split('/')[0]
-  if not (proto == 'http' or proto == 'https') :
+  if not (proto == 'http:' or proto == 'https:') :
       site = 'http://'+site
   s = spider()
   s.crawl_site(site)
